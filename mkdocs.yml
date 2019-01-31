@@ -1,0 +1,32 @@
+site_name: Moona Audio
+#theme: readthedocs
+nav:
+- Home: index.md
+- About:
+    - Features: about/features.md
+    - License: about/LICENSE.md
+#    - Changelog: about/changelog.md
+- Manual:
+    - Getting Started: manual/getting_started.md
+    - Basic Implementation: manual/implementing.md
+    - MPlayable Properties:
+        - The List View: manual/mobject/mobject_list.md
+        - Audio Properties: manual/mobject/mobject_audio.md
+        - Spatial Properties: manual/mobject/mobject_spatial.md
+        - Advance Properties: manual/mobject/mobject_advanced.md
+        - RTPC Properties: manual/mobject/mobject_rtpc.md
+    - Debugging:
+        - Instance Window: manual/debugging/instance_window.md
+        - MDebugger: manual/debugging/mdebugger.md
+    - MConfig:
+        - Debug Options: manual/mconfig/mconfig_debug.md
+        - Feature Toggles: manual/mconfig/mconfig_features.md
+        - Voice Management: manual/mconfig/mconfig_voicemanagement.md
+        - Spatialization: manual/mconfig/mconfig_spatialization.md
+        - Mixer Assignments: manual/mconfig/mconfig_mixer.md
+- Scripting Guide:
+    - Getting Started: scripting/getting_started.md
+    - Playing Sounds: scripting/playing_audio.md
+    - Controling Sound Behaviour: scripting/controling_sounds.md
+    - Setting Parameters: scripting/setting_parameters.md
+    - Contributing: scripting/contributing.md
