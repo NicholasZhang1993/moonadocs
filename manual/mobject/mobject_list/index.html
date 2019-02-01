@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>The List View - Moona Audio</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Moona Audio</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../about/features/">Features</a>
+</li>
+                                    
+<li >
+    <a href="../../../about/LICENSE/">License</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../getting_started/">Getting Started</a>
+</li>
+                                    
+<li >
+    <a href="../../implementing/">Basic Implementation</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MPlayable Properties</a>
+    <ul class="dropdown-menu">
+            
+<li class="active">
+    <a href="./">The List View</a>
+</li>
+            
+<li >
+    <a href="../mobject_audio/">Audio Properties</a>
+</li>
+            
+<li >
+    <a href="../mobject_spatial/">Spatial Properties</a>
+</li>
+            
+<li >
+    <a href="../mobject_advanced/">Advance Properties</a>
+</li>
+            
+<li >
+    <a href="../mobject_rtpc/">RTPC Properties</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Debugging</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../debugging/instance_window/">Instance Window</a>
+</li>
+            
+<li >
+    <a href="../../debugging/mdebugger/">MDebugger</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MConfig</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../mconfig/mconfig_debug/">Debug Options</a>
+</li>
+            
+<li >
+    <a href="../../mconfig/mconfig_features/">Feature Toggles</a>
+</li>
+            
+<li >
+    <a href="../../mconfig/mconfig_voicemanagement/">Voice Management</a>
+</li>
+            
+<li >
+    <a href="../../mconfig/mconfig_spatialization/">Spatialization</a>
+</li>
+            
+<li >
+    <a href="../../mconfig/mconfig_mixer/">Mixer Assignments</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Scripting Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../scripting/getting_started/">Getting Started</a>
+</li>
+                                    
+<li >
+    <a href="../../../scripting/playing_audio/">Playing Sounds</a>
+</li>
+                                    
+<li >
+    <a href="../../../scripting/controling_sounds/">Controling Sound Behaviour</a>
+</li>
+                                    
+<li >
+    <a href="../../../scripting/setting_parameters/">Setting Parameters</a>
+</li>
+                                    
+<li >
+    <a href="../../../scripting/contributing/">Contributing</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../../implementing/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../mobject_audio/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#the-list-view">The List View</a></li>
+            <li><a href="#actions">Actions</a></li>
+            <li><a href="#the-playlist">The Playlist</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="the-list-view">The List View</h1>
+<h2 id="actions">Actions</h2>
+<p>The leadin and follow actions require an Advanced proprty to be present in the MObject. A button will appear if one can be added.</p>
+<p>Each action will have an object field for the item to be played, an indicator of the MObjects fade times and a volume offset (dB).</p>
+<h3 id="leadin-action">Leadin Action</h3>
+<p>The leadin action is triggered befor the main part of the MObject gets played back. This feature is useful for power up sounds (car engine starting).</p>
+<p>The main sound will start playing right after the leadin is finished, unless a fade in time is set in which case it will be played that amount of time before the leadin finishes.</p>
+<h3 id="follow-action">Follow Action</h3>
+<p>This feature is useful for power down sounds or when we want to chan multiple MObjects together. It's also possible to set the follow action to the MObject itself in which case the MObject will retriger once it's done playing (useful for a music playlist).</p>
+<p>The follow action is played the sound instance is stopped (<code>Stop()</code> is called) or once the sound reaches end of playback. When a fadeout time is set for the MObject the follow action will trigger that amount of time early to overlap the fadeout with the follow action.</p>
+<h2 id="the-playlist">The Playlist</h2>
+<h3 id="playmode">Playmode</h3>
+<p>The Playmode determines how the playlist is evaluated. The options available are:</p>
+<ul>
+<li>Sequence<ul>
+<li>Each trigger will play the next</li>
+<li>The playlist loops.</li>
+</ul>
+</li>
+<li>Random<ul>
+<li>Each trigger will pick a random item to play.</li>
+<li>Respects the "don't repeat" option.</li>
+</ul>
+</li>
+<li>Weighted<ul>
+<li>Each trigger will pick a item according to their weights. If all weights are the same the behaviour is identical to "Random".</li>
+<li>Respects the "don't repeat" option (which might affect weighting).</li>
+</ul>
+</li>
+<li>Blending<ul>
+<li>Plays all items at once.</li>
+<li>The RTPC properties diplay the container blending parameters for each item.</li>
+</ul>
+</li>
+</ul>
+<h3 id="dont-repeat-last">Don't Repeat Last</h3>
+<p>This option ensure that a certain amount of item playback history will be kept to avoid repititions. This might interfere with weighted playback.</p>
+<h3 id="item-list">Item List</h3>
+<p>Each MPlayable Item in the playlist is represented in one row.</p>
+<ul>
+<li>Object Field<ul>
+<li>Display the AudioClip/MObject to be played</li>
+</ul>
+</li>
+<li>Length<ul>
+<li>Display the length of the current item</li>
+</ul>
+</li>
+<li>Volume<ul>
+<li>Offset the items volume (dB)</li>
+</ul>
+</li>
+<li>Weighted<ul>
+<li>Determines the items weight in weighted playback</li>
+</ul>
+</li>
+<li>Play Button<ul>
+<li>Use to audiotion the item</li>
+</ul>
+</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

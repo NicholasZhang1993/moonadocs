@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Debug Options - Moona Audio</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Moona Audio</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../about/features/">Features</a>
+</li>
+                                    
+<li >
+    <a href="../../../about/LICENSE/">License</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../getting_started/">Getting Started</a>
+</li>
+                                    
+<li >
+    <a href="../../implementing/">Basic Implementation</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MPlayable Properties</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../mobject/mobject_list/">The List View</a>
+</li>
+            
+<li >
+    <a href="../../mobject/mobject_audio/">Audio Properties</a>
+</li>
+            
+<li >
+    <a href="../../mobject/mobject_spatial/">Spatial Properties</a>
+</li>
+            
+<li >
+    <a href="../../mobject/mobject_advanced/">Advance Properties</a>
+</li>
+            
+<li >
+    <a href="../../mobject/mobject_rtpc/">RTPC Properties</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Debugging</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../debugging/instance_window/">Instance Window</a>
+</li>
+            
+<li >
+    <a href="../../debugging/mdebugger/">MDebugger</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MConfig</a>
+    <ul class="dropdown-menu">
+            
+<li class="active">
+    <a href="./">Debug Options</a>
+</li>
+            
+<li >
+    <a href="../mconfig_features/">Feature Toggles</a>
+</li>
+            
+<li >
+    <a href="../mconfig_voicemanagement/">Voice Management</a>
+</li>
+            
+<li >
+    <a href="../mconfig_spatialization/">Spatialization</a>
+</li>
+            
+<li >
+    <a href="../mconfig_mixer/">Mixer Assignments</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Scripting Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../scripting/getting_started/">Getting Started</a>
+</li>
+                                    
+<li >
+    <a href="../../../scripting/playing_audio/">Playing Sounds</a>
+</li>
+                                    
+<li >
+    <a href="../../../scripting/controling_sounds/">Controling Sound Behaviour</a>
+</li>
+                                    
+<li >
+    <a href="../../../scripting/setting_parameters/">Setting Parameters</a>
+</li>
+                                    
+<li >
+    <a href="../../../scripting/contributing/">Contributing</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../../debugging/mdebugger/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../mconfig_features/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#debug-options">Debug Options</a></li>
+            <li><a href="#enable-debug-mode">Enable Debug Mode</a></li>
+            <li><a href="#enable-verbose-logging">Enable Verbose Logging</a></li>
+            <li><a href="#measure-listener-levels">Measure Listener Levels</a></li>
+            <li><a href="#draw-debug-gizmos">Draw Debug Gizmos</a></li>
+            <li><a href="#draw-audiosource-labels">Draw AudioSource Labels</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="debug-options">Debug Options</h1>
+<p>This section allws to enable certain tooling for in editor debug info.</p>
+<h3 id="enable-debug-mode">Enable Debug Mode</h3>
+<p>This is the basic debug on/off switch. without it many debug options will not funtion properly. One effect is that Moona will start printing important messages to the console so if Moona behaves odd in some way this would be the first thing to enable.</p>
+<h3 id="enable-verbose-logging">Enable Verbose Logging</h3>
+<p>This option increases the amount of debug info. Moona will print lots of information about it's state. To use this information in depth knowledge might be required.</p>
+<h3 id="measure-listener-levels">Measure Listener Levels</h3>
+<p>This option captures the pieak and average volumes of the <a href="https://docs.unity3d.com/ScriptReference/AudioListener.html">AudioListener</a> in the editor every frame. If <strong>Draw Debug Gizmos</strong> is enabled it will display the current values and displays them in the game view.</p>
+<h3 id="draw-debug-gizmos">Draw Debug Gizmos</h3>
+<p>toggles various gizmos for debugging (Listener levels, FlatPanning configuration, AudioSource lables).</p>
+<h3 id="draw-audiosource-labels">Draw AudioSource Labels</h3>
+<p>This option enables floating lables at the screen position of each AudioSource managed by Moona.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

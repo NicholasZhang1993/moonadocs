@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Spatial Properties - Moona Audio</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Moona Audio</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../about/features/">Features</a>
+</li>
+                                    
+<li >
+    <a href="../../../about/LICENSE/">License</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../getting_started/">Getting Started</a>
+</li>
+                                    
+<li >
+    <a href="../../implementing/">Basic Implementation</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MPlayable Properties</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../mobject_list/">The List View</a>
+</li>
+            
+<li >
+    <a href="../mobject_audio/">Audio Properties</a>
+</li>
+            
+<li class="active">
+    <a href="./">Spatial Properties</a>
+</li>
+            
+<li >
+    <a href="../mobject_advanced/">Advance Properties</a>
+</li>
+            
+<li >
+    <a href="../mobject_rtpc/">RTPC Properties</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Debugging</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../debugging/instance_window/">Instance Window</a>
+</li>
+            
+<li >
+    <a href="../../debugging/mdebugger/">MDebugger</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MConfig</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../mconfig/mconfig_debug/">Debug Options</a>
+</li>
+            
+<li >
+    <a href="../../mconfig/mconfig_features/">Feature Toggles</a>
+</li>
+            
+<li >
+    <a href="../../mconfig/mconfig_voicemanagement/">Voice Management</a>
+</li>
+            
+<li >
+    <a href="../../mconfig/mconfig_spatialization/">Spatialization</a>
+</li>
+            
+<li >
+    <a href="../../mconfig/mconfig_mixer/">Mixer Assignments</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Scripting Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../scripting/getting_started/">Getting Started</a>
+</li>
+                                    
+<li >
+    <a href="../../../scripting/playing_audio/">Playing Sounds</a>
+</li>
+                                    
+<li >
+    <a href="../../../scripting/controling_sounds/">Controling Sound Behaviour</a>
+</li>
+                                    
+<li >
+    <a href="../../../scripting/setting_parameters/">Setting Parameters</a>
+</li>
+                                    
+<li >
+    <a href="../../../scripting/contributing/">Contributing</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../mobject_audio/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../mobject_advanced/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#spatial-properties">Spatial Properties</a></li>
+            <li><a href="#spatial-mode">Spatial Mode</a></li>
+            <li><a href="#panning-options">Panning Options</a></li>
+            <li><a href="#spatial-options">Spatial Options</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="spatial-properties">Spatial Properties</h1>
+<h2 id="spatial-mode">Spatial Mode</h2>
+<p>The spatial mode determines how the sound gets spatialized (ie how it's 3D position translates to panning etc). The options are:</p>
+<ul>
+<li>Channel<ul>
+<li>2D playback - No spatialization applied.</li>
+</ul>
+</li>
+<li>Spatial<ul>
+<li>3D playback - Use the default vector based amplitude panning supplied by Unity.</li>
+<li>Use this if you want to also apply HRTF spatialization.</li>
+</ul>
+</li>
+<li>Flat<ul>
+<li>Uses the 2D position in the camera's view port to determine distnace from the center, and panning. See <a href="../../mconfig/mconfig_spatialization/">MConfig: Spatialization</a> for information on configuring "Flat Panning".</li>
+</ul>
+</li>
+</ul>
+<h2 id="panning-options">Panning Options</h2>
+<p>When set to Channel or Flat mode, or when the "3D Spatial Blend" option is less that <strong>1</strong> the panning options are visible.</p>
+<p>The Pan determines the left/right panning of the sound.</p>
+<p>The Pan Depth below it limits the amount of panning that the sound can have applied. Limiting the pan depth to <strong>0.5</strong> makes it so if the soudn instance is panned har left, the MObject's panning will only be panned to the left a little.</p>
+<h2 id="spatial-options">Spatial Options</h2>
+<h3 id="spatial-blend">Spatial Blend</h3>
+<p>The 3D spatial blend determines how much the spatialization of the sound should be based on the 3D position, and how much of the panning should happen in 2D space.</p>
+<h3 id="static-position">Static Position</h3>
+<p>Even when passing in a Tranform as position data to an <code>MObject.Play()</code> call, the MObject will be played in 3D space, but not follow the transform if it moves.</p>
+<h3 id="hrtf">HRTF</h3>
+<p>This option will enable the "Head Related Transfer Function" (HRTF) to be applied to the sound. This only has an effect if the sound is played with a spatial blend of greater than <strong>0</strong> and a Spatialization plugin is set.</p>
+<p>Depending on the project this might use one of the Unity builtin spatializers such as "Oculus", or use a 3rd party plugin such as "Steam Audio" (which needs additional setup to work properly).</p>
+<h3 id="attenuation">Attenuation</h3>
+<p>The attenuation mode determines the math used to transform the 3D position of the sound to a distance attenuation.</p>
+<ul>
+<li>Linear<ul>
+<li>The amplitude halfway betwen min and max distance is half (-6 dB)</li>
+</ul>
+</li>
+<li>Logarithmic<ul>
+<li>An approximation of a Logarithmic falloff curve. Models reality a bit.</li>
+</ul>
+</li>
+<li>Custom<ul>
+<li>Set a custum curve in the Curve editor.</li>
+</ul>
+</li>
+</ul>
+<p>The minimum distance determines at which distance the attenuation begins. When the distance is lower than this value the sound will play at full volume.</p>
+<p>The maximum distance determines at which poit the sound will go silent. If the the attenuation is set to "Custom" the value at the very right of the attenuation curve will be used.</p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

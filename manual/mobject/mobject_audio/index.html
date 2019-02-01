@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../../img/favicon.ico">
+        <title>Audio Properties - Moona Audio</title>
+        <link href="../../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../../..">Moona Audio</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../../..">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../about/features/">Features</a>
+</li>
+                                    
+<li >
+    <a href="../../../about/LICENSE/">License</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manual <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../getting_started/">Getting Started</a>
+</li>
+                                    
+<li >
+    <a href="../../implementing/">Basic Implementation</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MPlayable Properties</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../mobject_list/">The List View</a>
+</li>
+            
+<li class="active">
+    <a href="./">Audio Properties</a>
+</li>
+            
+<li >
+    <a href="../mobject_spatial/">Spatial Properties</a>
+</li>
+            
+<li >
+    <a href="../mobject_advanced/">Advance Properties</a>
+</li>
+            
+<li >
+    <a href="../mobject_rtpc/">RTPC Properties</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">Debugging</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../debugging/instance_window/">Instance Window</a>
+</li>
+            
+<li >
+    <a href="../../debugging/mdebugger/">MDebugger</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#">MConfig</a>
+    <ul class="dropdown-menu">
+            
+<li >
+    <a href="../../mconfig/mconfig_debug/">Debug Options</a>
+</li>
+            
+<li >
+    <a href="../../mconfig/mconfig_features/">Feature Toggles</a>
+</li>
+            
+<li >
+    <a href="../../mconfig/mconfig_voicemanagement/">Voice Management</a>
+</li>
+            
+<li >
+    <a href="../../mconfig/mconfig_spatialization/">Spatialization</a>
+</li>
+            
+<li >
+    <a href="../../mconfig/mconfig_mixer/">Mixer Assignments</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Scripting Guide <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../../scripting/getting_started/">Getting Started</a>
+</li>
+                                    
+<li >
+    <a href="../../../scripting/playing_audio/">Playing Sounds</a>
+</li>
+                                    
+<li >
+    <a href="../../../scripting/controling_sounds/">Controling Sound Behaviour</a>
+</li>
+                                    
+<li >
+    <a href="../../../scripting/setting_parameters/">Setting Parameters</a>
+</li>
+                                    
+<li >
+    <a href="../../../scripting/contributing/">Contributing</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../mobject_list/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../mobject_spatial/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#audio-properties">Audio Properties</a></li>
+            <li><a href="#volume">Volume</a></li>
+            <li><a href="#pitch">Pitch</a></li>
+            <li><a href="#looping">Looping</a></li>
+            <li><a href="#mixer-group-routing">Mixer Group / Routing</a></li>
+            <li><a href="#fading">Fading</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="audio-properties">Audio Properties</h1>
+<h2 id="volume">Volume</h2>
+<p>The Volume slider allows changing the volume of the MObjects playback (in dB). If the chackbox below is enabled the random amount slider is anabled and can be used to define a range of volumes for each individual <code>Play()</code> call.</p>
+<h2 id="pitch">Pitch</h2>
+<p>The Pitch slider allows changing the pitch of the MObjects playback (in semitones). If the chackbox below is enabled the random amount slider is anabled and can be used to define a range of pitches for each individual <code>Play()</code> call.</p>
+<h2 id="looping">Looping</h2>
+<p>Plays the MObject's items in looping mode. This requires the game code to call 'Stop()' on the sound instance.</p>
+<h2 id="mixer-group-routing">Mixer Group / Routing</h2>
+<p>The Mixer Group field can be used to assign an <a href="https://docs.unity3d.com/ScriptReference/Audio.AudioMixerGroup.html">UnityEngine.AudioMixerGroup</a> to the MObject. Preferably this option stays blank and a <code>MMixerGroup</code> is assigned above the Audio Properties section instead.</p>
+<h2 id="fading">Fading</h2>
+<p>An Advanced Property is required to enabled fading. If one can be added a button will appear to do so.</p>
+<p>Fading in and out are defined by two parameters each.</p>
+<ul>
+<li>The fade time is the amount of seconds it takes for the fade to complete.</li>
+<li>The fade curve determines the slope of the fade</li>
+</ul>
+<p>As fading happens in volume factor (linear, not dB) space, a linear fade will sound rather loud at low levels and change little at high levels. To accomplish a smoother fade in an Ease-In option should be chosen. To accomplish a smoother fade out an ease out should be chosen. The easing options become more sloped (less linear) in the following order:</p>
+<ul>
+<li>Quad</li>
+<li>Qubic</li>
+<li>Sine</li>
+<li>Exponential</li>
+</ul>
+<p><img alt="Easing Curves Overview" src="http://vitiy.info/wp-content/uploads/2014/11/Screenshot-2014-11-27-16.22.22.png" /></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../../js/base.js" defer></script>
+        <script src="../../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
